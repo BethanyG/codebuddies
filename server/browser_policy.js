@@ -7,6 +7,7 @@ BrowserPolicy.content.allowInlineScripts();
 BrowserPolicy.content.allowInlineStyles();
 BrowserPolicy.content.allowOriginForAll('http://*.materialdesignicons.com');
 BrowserPolicy.content.allowOriginForAll('http://*.google.com');
+BrowserPolicy.content.allowOriginForAll('http://*.gravatar.com');
 var trusted = [
   '*.herokuapp.com',
   '*.gstatic.com',
@@ -15,7 +16,11 @@ var trusted = [
   '*.google.com',
   '*.gravatar.com',
   '*.slack.com',
-  '*.wp.com'
+  '*.slack-edge.com',
+  '*.wp.com',
+  '*.githubusercontent.com',
+  '*.twimg.com',
+  '*.licdn.com'
 ];
 
 _.each(trusted, function(origin) {
